@@ -1,0 +1,32 @@
+{
+  "name": "nodebb-plugin-sso-dropbox",
+  "version": "0.0.0",
+  "description": "NodeBB Dropbox SSO",
+  "main": "library.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/julianlam/nodebb-plugin-sso-dropbox"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "dropbox",
+    "sso",
+    "single sign on",
+    "registration",
+    "login"
+  ],
+  "author": {
+    "name": "Julian Lam",
+    "email": "julian@nodebb.org"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/julianlam/nodebb-plugin-sso-dropbox/issues"
+  },
+  "readme": "",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "passport-dropbox-oauth2": "~0.1.6"
+  }
+}
