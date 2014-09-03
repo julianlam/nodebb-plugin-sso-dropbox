@@ -30,7 +30,6 @@
 
 		callback();
 	}
-	console.log('DERP', nconf.get('url') + '/auth/dropbox/callback');
 
 	Dropbox.getStrategy = function(strategies, callback) {
 		meta.settings.get('sso-dropbox', function(err, settings) {
