@@ -21,13 +21,13 @@
 
 	var Dropbox = {};
 
-	Dropbox.init = function(app, middleware, controllers, callback) {
+	Dropbox.init = function(data, callback) {
 		function render(req, res, next) {
 			res.render('admin/plugins/sso-dropbox', {});
 		}
 
-		app.get('/admin/plugins/sso-dropbox', middleware.admin.buildHeader, render);
-		app.get('/api/admin/plugins/sso-dropbox', render);
+		data.app.get('/admin/plugins/sso-dropbox', data.middleware.admin.buildHeader, render);
+		data.app.get('/api/admin/plugins/sso-dropbox', render);
 
 		callback();
 	}

@@ -30,6 +30,6 @@
     "passport-dropbox-oauth2": "~0.1.6"
   },
   "nbbpm": {
-    "compatibility": "^0.5.0"
+    "compatibility": "^0.6.0"
   }
 }
