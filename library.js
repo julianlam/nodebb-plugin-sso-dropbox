@@ -26,8 +26,8 @@
 			res.render('admin/plugins/sso-dropbox', {});
 		}
 
-		data.app.get('/admin/plugins/sso-dropbox', data.middleware.admin.buildHeader, render);
-		data.app.get('/api/admin/plugins/sso-dropbox', render);
+		data.router.get('/admin/plugins/sso-dropbox', data.middleware.admin.buildHeader, render);
+		data.router.get('/api/admin/plugins/sso-dropbox', render);
 
 		callback();
 	}
